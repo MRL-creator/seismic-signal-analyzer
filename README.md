@@ -21,6 +21,8 @@ Waveform analysis brings together acquisition metadata, sampling theory, signal 
 
 ## Features
 
+![Analyzer showing the bundled synthetic waveform and spectrogram](assets/dashboard.jpg)
+
 - Read CSV files with elapsed numeric time, ISO-style timestamps, or sample indices; select among multiple amplitude channels.
 - Check monotonicity, missing values, numeric samples, and near-uniform time spacing before frequency-domain work.
 - View the waveform with zoom and pan, alongside an interactive time-frequency power spectrogram.
@@ -35,7 +37,7 @@ Waveform analysis brings together acquisition metadata, sampling theory, signal 
 Python 3.10 or newer is required.
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/MRL-creator/seismic-signal-analyzer.git
 cd seismic-signal-analyzer
 python -m venv .venv
 # Windows: .venv\Scripts\activate
@@ -127,3 +129,8 @@ The tests use deterministic synthetic signals to check timestamp and sample-inde
 ## Limitations
 
 The app currently accepts CSV only and analyzes one channel at a time. It assumes uniformly sampled data and relies on the user to know the physical meaning and units of amplitude. The bundled sample is a synthetic teaching signal. Event detection is a basic amplitude heuristic, SNR depends on chosen windows, and no automatic P/S picks, source parameters, magnitude estimates, or calibrated ground-motion measurements are provided.
+
+## License
+
+Code is available under the [MIT license](LICENSE). External datasets and geographic
+assets retain their original provenance and terms; see the source notes and references.
