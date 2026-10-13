@@ -13,8 +13,8 @@ def preprocess(data: np.ndarray, sampling_rate: float, *, detrend: bool = False,
     which doubles the effective order and can create edge transients.
     """
     values = np.asarray(data, dtype=float).copy()
-    if values.ndim != 1 or len(values) < 16 or not np.isfinite(values).all():
-        raise ValueError("Processing requires at least 16 finite, one-dimensional samples.")
+    if values.ndim != 1 or len(values) < 2 or not np.isfinite(values).all():
+        raise ValueError("Processing requires at least 2 finite, one-dimensional samples.")
     if sampling_rate <= 0:
         raise ValueError("Sampling rate must be positive.")
     if not isinstance(order, int) or order < 1:
