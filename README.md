@@ -1,5 +1,7 @@
 # Seismic Signal Analyzer
 
+[![CI](https://github.com/MRL-creator/seismic-signal-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/MRL-creator/seismic-signal-analyzer/actions/workflows/ci.yml)
+
 <p align="center">
   <strong>A small local waveform workstation for inspecting seismic-style time series.</strong><br>
   CSV in · SciPy processing · interactive waveform, spectrum, and spectrogram out
