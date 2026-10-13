@@ -134,3 +134,12 @@ The app currently accepts CSV only and analyzes one channel at a time. It assume
 
 Code is available under the [MIT license](LICENSE). External datasets and geographic
 assets retain their original provenance and terms; see the source notes and references.
+
+## Reproduce the results
+
+Run `python examples/validate.py` for the [numerical evidence and its limits](docs/validation.md).
+The same example runs under the automated test gate.
+
+## Project case study
+
+Read the [problem, implementation decisions, evidence, and next steps](docs/case-study.md).
